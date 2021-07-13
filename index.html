@@ -1,29 +1,25 @@
 <html>
+  <script type = "text/javascript">
+function setURL(url){
+  document.getElementById('iframe').src = url;
+}
+  </script> 
+  
   <title> Squadra Data </title>
+  
   <meta name="Squadra Data" content="Bem-vindo ao Squadra Data!">
-<head>
+
+  <head>
   
   <div class="header">
   <h1>Squadra Data</h1>
-  <p><button class="textLarge" onclick='show("ReportSection", "");' style="display: inline-block;">Car Rental</button></p>
-   <script type = "text/javascript">
-   function show(pageName, filterValue){
-   //Set the baseUrl to the embed url you get from the Power BI UI
-   var newUrl = baseUrl + "&pageName=" + pageName;
-   if(null != filterValue && "" != filterValue)
-   {/code>
-   newUrl += "&$filter=Industries/Industry eq '" + filterValue + "'";
-   }
-   //Assumes there’s an iFrame on the page with id="iFrame"
-   var report = document.getElementById("iFrame");
-   report.src = newUrl;
-   }
-  </script> 
+  <p><input type="button" class="textLarge" onclick="setURL('URLHere')" style="display: inline-block;">Car Rental</input></p>
   </div>
- </head>
-  
+ 
+</head>
+
  <body style="margin:0px;padding:0px;overflow:hidden">
  
-  <iframe width="1080" height="760" src="https://app.powerbi.com/reportEmbed?reportId=b4dd2352-9ef8-476e-8c7b-7ffcac7a6bf6&autoAuth=true&ctid=a11f2567-34d2-4fdb-ad33-59786110f79e&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1iLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
+  <iframe name width="1080" height="760" src="https://app.powerbi.com/reportEmbed?reportId=b4dd2352-9ef8-476e-8c7b-7ffcac7a6bf6&autoAuth=true&ctid=a11f2567-34d2-4fdb-ad33-59786110f79e&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLWJyYXppbC1zb3V0aC1iLXByaW1hcnktcmVkaXJlY3QuYW5hbHlzaXMud2luZG93cy5uZXQvIn0%3D" frameborder="0" allowFullScreen="true"></iframe>
  
  </body>
