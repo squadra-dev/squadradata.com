@@ -1,7 +1,10 @@
 <html>
 <head>
   
-  <script type = "text/javascript">
+  <div class="header">
+  <h1>Header</h1>
+  <p>My supercool header</p>
+    <script type = "text/javascript">
    function show(pageName, filterValue){
    //Set the baseUrl to the embed url you get from the Power BI UI
    var newUrl = baseUrl + "&pageName=" + pageName;
@@ -13,7 +16,8 @@
    var report = document.getElementById("iFrame");
    report.src = newUrl;
    }
-  </script>  
+  </script> 
+  </div>
     
     <title> Squadra Data </title>
     <meta name="Squadra Data" content="Bem-vindo ao Squadra Data!">
