@@ -1,2 +1,2 @@
 # squadradata
-Website criado por LF Moraes
+Website Squadra Data
