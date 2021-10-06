@@ -2,105 +2,25 @@
 <html lang="pt-br">
 
 <head>
+    
     <meta charset="UTF-8">
     <meta name="robots" content="noindex" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Squadra Data</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
 </head>
 
 <body>
-
-    <nav id="menu-h">
-        <ul>
-            <li>
-                <a
-                    href="https://app.powerbi.com/Redirect?action=OpenApp&appId=c1ab5b5e-641f-4a42-b492-986315b93523&ctid=a11f2567-34d2-4fdb-ad33-59786110f79e">
-                    Squadra Data
-                </a>
-            </li>
-
-            <li>
-                <a href="app&sites.html">App & Sites</a>
-            </li>
-
-            <div class="dropdown">
-                <button class="dropbtn">Car Rental</button>
-                <div class="dropdown-content">
-                    <a href="carrental_01.html">Empresas</a>
-                    <a href="carrental_02.html">Tabela Fipe</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">E-commerce</button>
-                <div class="dropdown-content">
-                    <a href="ecommerce_01.html">Take Rate</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Financials</button>
-                <div class="dropdown-content">
-                    <a href="financials_01.html">MDR</a>
-                    <a href="financials_02.html">Taxa de Juros</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Healthcare</button>
-                <div class="dropdown-content">
-                    <a href="healthcare_01.html">Beneficiários</a>
-                    <a href="healthcare_02.html">Hospitais</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Infra</button>
-                <div class="dropdown-content">
-                    <a href="comex_01.html">ComEx</a>
-
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Oil & Gas</button>
-                <div class="dropdown-content">
-                    <a href="oil&gas_01.html">Produção</a>
-                    <a href="oil&gas_02.html">Combustíveis</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Reports</button>
-                <div class="dropdown-content">
-                    <a href="reports_01.html">Fundos</a>
-                    <a href="reports_02.html">Cotação (R$)</a>
-                    <a href="reports_03.html">PX Cmdty</a>
-                </div>
-            </div>
-
-            <div class="dropdown">
-                <button class="dropbtn">Services</button>
-                <div class="dropdown-content">
-                    <a href="depilacao.html">Empresas</a>
-                </div>
-            </div>
-
-            <li>
-                <a href="telecom.html">Telecom</a>
-            </li>
-
-            <div class="dropdown">
-                <button class="dropbtn">Utilities</button>
-                <div class="dropdown-content">
-                    <a href="utilities_01.html">Geração</a>
-                </div>
-            </div>
-
-        </ul>
-    </nav>
+    <div id="navigation">
+    </div>
+    <script>
+        $(function() {
+            $("#navigation").load("nav.html");
+        });
+    </script>
 </body>
 
 </html>
