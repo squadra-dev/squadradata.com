@@ -8,6 +8,13 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+  background-image:"img/logo_squadra.png";
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+}
+
 /* Menu Bar */
 #menu-h ul{
     list-style-type: none;  
